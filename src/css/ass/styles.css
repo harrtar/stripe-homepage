@@ -349,20 +349,6 @@ template {
   display: none;
 }
 
-body {
-    background: pink;
-}
 
-h1 {
-    color: gray;
-    text-align: center;
-    font-size: 3em;
-}
-
-h2 {
-    color: green;
-    text-align: center;
-    font-size: 2.5em;
-}
 
 /*# sourceMappingURL=styles.css.map */

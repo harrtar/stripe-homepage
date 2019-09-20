@@ -349,6 +349,71 @@ template {
   display: none;
 }
 
+/* Responsive fonts */
+:root {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 1rem;
+    }
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(348.35deg, #A6FFCB 0.55%, #05D5FF 22.84%, #5533FF 72.77%);
+}
+
+.header__menu_and_logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu > nav {
+    display: flex;
+}
+
+.header__menu > nav > ul {
+    display: flex;
+}
+
+.header__menu > nav > ul + ul {
+    margin-left: 10em;
+}
+
+.header__menu > nav > ul > li {
+    list-style: none;
+}
+
+.header__menu > nav > ul > li + li {
+    margin-left: 2.5em;
+}
+
+.header__menu > nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 
 /*# sourceMappingURL=styles.css.map */

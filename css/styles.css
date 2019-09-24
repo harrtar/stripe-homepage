@@ -349,6 +349,7 @@ template {
   display: none;
 }
 
+
 /* <==== responsive fonts ====> */
 :root {
     font-size: 0.75rem;
@@ -379,7 +380,7 @@ body {
 .button {
     text-transform: uppercase;
     border-radius: 0.25em;
-    font-weight: bold;
+    font-weight: 600;
     padding: 0.62em 1.12em 0.62em 1.12em;
     border: none;
     cursor: pointer;
@@ -387,15 +388,20 @@ body {
 
 /* <==== header =====> */
 header {
-    /* background-image: url(../img/rect_bg_left.png); */
-    background-image: linear-gradient(348.35deg, #A6FFCB 0.55%, #05D5FF 22.84%, #5533FF 72.77%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    background:
+    no-repeat 100% 25% url(../img/rect_bg_right_top.png), 
+    no-repeat 100% 60% url(../img/rect_bg_right_bottom.png), 
+    no-repeat 30% 0 url(../img/triangle_bg_top.png),
+    no-repeat 0 110% url(../img/rect_bg_left.png),
+    linear-gradient(348.35deg, #A6FFCB 0.55%, #05D5FF 22.84%, #5533FF 72.77%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 }
 
 .header__menu_and_logo {
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
 }
 
 .header__logo {
@@ -429,7 +435,7 @@ header {
 }
 
 .header__content {
-    margin-top: 7.5rem;
+    margin-top: 9.5rem;
     color: #fff;
 }
 
@@ -438,6 +444,7 @@ header {
     background: #3F4FF6;
     border-radius: 1em;
     padding: 0.2em 2em 0.2em 0;
+    letter-spacing: 0.55px;
 }
 
 .header__content .introducing > span {
@@ -458,6 +465,7 @@ header {
     max-width: 45%;
     color: #D9FCFF;
     line-height: 1.75rem;
+    letter-spacing: 0.42px;
 }
 
 .header__content_buttons {
@@ -483,6 +491,110 @@ header {
     margin-left: 1.25rem;
 }
 /* <==== header =====/> */
+
+/* <==== background container =====> */
+.background_container {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 50rem;
+    height: 100rem;
+    background: no-repeat 100% 0 url(../img/phone_bg_top.png),
+                no-repeat 60% 22% url(../img/ipad_bg_right_top.png),
+                no-repeat 100% 70% url(../img/asana_bg_right_bottom.png),
+                no-repeat 44% 63% url(../img/phone_bg_right_bottom.png);
+    z-index: 15;
+}
+/* <==== background container =====/> */
+
+/* <==== main =====> */
+
+/* toolkit start */
+main .toolkit {
+    text-align: right;
+    max-width: 54%;
+    margin-top: 4rem;
+}
+
+main .toolkit .toolkit__img-and-title {
+    display: flex;
+    justify-content: center;
+}
+
+.toolkit__title {
+    max-width: 77%;
+}
+
+.toolkit__title > h2 {
+    color: #24B47E;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.toolkit__img {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    z-index: 20;
+}
+
+.toolkit > p {
+    max-width: 98%;
+    margin-left: 2%;
+    color: #6B7C93;
+    line-height: 1.62rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #F1F7FB;
+    padding-bottom: 2.2rem;
+    display: block;
+}
+
+.discover  {
+    margin-top: 2.2rem;
+}
+
+.toolkit .discover > a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #6772E5;
+}
+/* toolkit end */
+
+/* developers start */
+    .developers {
+        background-color: #F6F9FC;
+        -webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+        padding-top: 10rem;
+        position: relative;
+        z-index: 5;
+    }
+
+    .developers__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8rem;
+    }
+
+    .developers__header > h2 {
+        color: #24B47E;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .developers__header > p {
+        max-width: 70%;
+        color: #6B7C93;
+        line-height: 1.62rem;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+/* developers end */
+
+/* <==== main =====/> */
 
 
 

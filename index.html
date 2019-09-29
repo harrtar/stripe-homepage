@@ -70,7 +70,7 @@
                         are scaling faster and more efficiently by building their businesses on Stripe.
                     </p>
                     <div class="discover">
-                        <a href="#">Discover how businesses use Stripe &#8594;</a>
+                        <a href="#">Discover how businesses use Stripe &#8594</a>
                     </div>                    
                 </div><!--toolkit end-->
             </div><!--inner end-->
@@ -87,7 +87,23 @@
                         </p>
                     </div>
                     <div class="developers__content">
-                        <div class="code"></div>
+                        <div class="write-code">
+                            <div class="numbers_background">
+<pre><code><span class="code_numbers">  1 </span>   <span class="blueviolet">const</span> stripe = <span class="blue">require</span>(<span class="green">'stripe'</span>)(<span class="green">'sk_test_BQokikJOvBiI2HlWgH4olfQ2'</span>);
+<span class="code_numbers">  2 </span>   
+<span class="code_numbers">  3 </span>   <span class="gray">// Create your first payment from a test card.</span>
+<span class="code_numbers">  4 </span>   <span class="blueviolet">const</span> charge = <span class="blueviolet">await</span> stripe.charges.<span class="blue">create</span>({
+<span class="code_numbers">  5 </span>     amount: <span class="red">2000</span>,
+<span class="code_numbers">  6 </span>     currency: <span class="green">'usd'</span>,
+<span class="code_numbers">  7 </span>     source: {
+<span class="code_numbers">  8 </span>       number: <span class="green">'4242424242424242'</span>,
+<span class="code_numbers">  9 </span>       cvc: <span class="green">'123'</span>,
+<span class="code_numbers"> 10 </span>       exp_month: <span class="red">12</span>,
+<span class="code_numbers"> 11 </span>       exp_year: <span class="red">2018</span>
+<span class="code_numbers"> 12 </span>     }
+<span class="code_numbers"> 13 </span>   });</code></pre>
+                            </div>
+                        </div>
                         <div class="options">
                             <ul>
                                 <li>Payments</li>
